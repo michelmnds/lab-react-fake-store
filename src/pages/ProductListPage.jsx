@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "/src/styles/product.module.css";
+import { Link } from "react-router-dom";
 
 function ProductListPage() {
   // The state variable `products` is currently an empty array [],
@@ -26,7 +27,11 @@ function ProductListPage() {
     <div className="ProductListPage">
       {products?.map((prod) => {
         return (
-          <div className={styles.prodContainer} key={prod.id}>
+          <Link
+            to={`/product/details/${prod.id}`}
+            key={prod.id}
+            className={styles.prodContainer}
+          >
             <img className={styles.prodImg} src={prod.image} alt={prod.name} />
             <span className={styles.prodTitle} style={{ fontWeight: "bolder" }}>
               {prod.title}
@@ -36,7 +41,7 @@ function ProductListPage() {
             <span className={styles.prodDesc}>
               {prod.description.slice(0, 15)}...
             </span>
-          </div>
+          </Link>
         );
       })}
     </div>
