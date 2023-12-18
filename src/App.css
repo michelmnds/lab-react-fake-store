@@ -81,3 +81,14 @@
 .content.shifted {
   margin-left: 250px;
 }
+
+.ProductDetailsPage{
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 100px;
+
+  height: 80vh;
+}
