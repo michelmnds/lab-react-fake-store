@@ -27,7 +27,7 @@ function ProductListPage() {
       {products?.map((prod) => {
         return (
           <div className={styles.prodContainer} key={prod.id}>
-            <img src={prod.image} alt={prod.name} style={{ width: 120 }} />
+            <img className={styles.prodImg} src={prod.image} alt={prod.name} />
             <span className={styles.prodTitle} style={{ fontWeight: "bolder" }}>
               {prod.title}
             </span>
