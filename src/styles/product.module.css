@@ -5,9 +5,18 @@
     
     padding: 10px 25px 10px 25px;
 
-    border: 3px solid black;
-}
+    border: 3px solid rgba(0, 0, 0, 0.274);
 
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    width: 90%;
+    height: 200px;
+}
+.prodImg{
+    width: 100px;
+}
 .prodTitle{
     width: 150px;
 }
